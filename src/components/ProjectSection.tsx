@@ -28,7 +28,7 @@ const ProjectSection = () => {
             <>
 
               <p>We used a segmentation-by-classification approach, where the goal was to classify each pixel based on its surrounding context. Initially, we used a logistic regression model that took only the RGB values of the center pixel as input. We then improved performance by training a simple convolutional neural network (CNN) on 15×15 patches centered around each pixel, allowing the model to learn spatial features. Patches were sampled from training images with labels corresponding to the class of the center pixel.</p><br/>
-              <p>The next step was to use a U-NET architecture. This architecture ic commonly used for segmentation. We evaluated model performance using loss, accuracy, AUC and ROC curve on a test set. Finally, we applied the trained model across full images in a sliding window fashion to generate segmentation masks. In this project, I learned to implement segmentation in three different ways.</p>
+              <p>The next step was to use a U-NET architecture. This architecture is commonly used for segmentation. We evaluated model performance using loss, accuracy, AUC and ROC curve on a test set. Finally, we applied the trained model across full images in a sliding window fashion to generate segmentation masks. In this project, I learned to implement segmentation in three different ways.</p>
             
             </>
           ),
@@ -45,7 +45,7 @@ const ProjectSection = () => {
           highlight: "Chrome Extension",
           linkTitle: "Github",
           link: "https://github.com/SamHufkens/vibo-integrado_extension",
-          description: "At VIBO Sint-Barbara, teachers use the Integrado platform for administrative tasks. Some also use a manually created Word document called the 'Opdrachtenkaart' to track individual student goals. In this project, I learned how to develeop a chrome extension and how to deploy it to the Chrome developer store.",
+          description: "At VIBO Sint-Barbara, teachers use the Integrado platform for administrative tasks. Some also use a manually created Word document called the 'Opdrachtenkaart' to track individual student goals. In this project, I learned to develop a chrome extension and deploy it to the Chrome developer store.",
           problem: "The process of creating these 'Opdrachtenkaart' cards is time consuming and repetitive. Teachers always need to manually input data into Word documents for each student, which is takes a lot of time.",
           solution: "To solve this problem, I developed a Chrome extension that automates the creation of these cards. With the extension installed, relevant student data is automatically pulled from Integrado and inserted into a pre-designed PDF. This results in a significant time savings, as teachers no longer need to manually generate these cards.",
           image: (
@@ -70,6 +70,10 @@ const ProjectSection = () => {
               <br />
               <p>
                 I started by learning the theory, watching YouTube videos and reading articles that explained the transformer architecture in simple terms. Once I felt like I had a good understanding, I started coding. I used NumPy and TensorFlow to build the model from scratch, creating custom layers based on how transformers work. Training the model was not easy becuause it was difficult to access enough compute power to train.
+              </p>
+              <br />
+              <p>
+                I trained the model on a dataset of movie reviews. The goal is to give the model a movie title from the dataset, then the model should have to generate the review for that movie.
               </p>
               <br />
               <p>

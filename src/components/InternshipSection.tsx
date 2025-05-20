@@ -45,7 +45,7 @@ const Internship = () => {
           around managing client arrivals due to the absence of a dedicated front desk. To
           address this, I developed and deployed an Automatic Number Plate Recognition
           (ANPR) Notification System. Leveraging computer vision and deep learning, the
-          system detects, tracks, and recognizes license plates using motion detection combined with Optical Character Recognition (OCR). It integrates with Azure for
+          system detects and recognizes license plates using motion detection combined with Optical Character Recognition (OCR) and object detection. It integrates with Azure for
           real-time image processing, utilizing the YOLO model for object detection and
           PaddleOCR for text extraction. Upon detecting motion, the system captures a
           batch of images, processes them via an API, and identifies license plates. Confirmed plates are sent to an Azure Function, which verifies their presence in a
