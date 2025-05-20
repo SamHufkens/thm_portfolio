@@ -19,7 +19,7 @@ const ProjectSection = () => {
     const projects = [
         {
           title: "Skin Cancer Lesions",
-          highlight: "Segementation",
+          highlight: "Segmentation",
           linkTitle: "Github",
           link: "https://github.com/zenodarani/computer-vision-segmentation",
           description: "This project was created with a fellow student at SUPSI during my exchange semester. In this project, we focused on the problem of skin lesion segmentation using pixel-level dense classification. The goal is to automatically identify cancerous regions in images by classifying each pixel as either lesion or background. ",
