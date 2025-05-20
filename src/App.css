@@ -1,0 +1,22 @@
+/* Change scrollbar width */
+::-webkit-scrollbar {
+    width: 8px; /* Adjust width as needed */
+  }
+  
+  /* Track (background of scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light gray */
+    border-radius: 10px;
+  }
+  
+  /* Handle (draggable part of scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background: #AAA6C3; /* Blue color */
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #AAA6C3; /* Darker blue */
+  }
+  
