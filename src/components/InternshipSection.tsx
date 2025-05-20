@@ -56,14 +56,8 @@ const Internship = () => {
           completed, I tested it in two different locations, and all tests were successful.
         </p>
         <p className='text-justify text-textColorRose mt-5'>
-          Download the full report <a href="https://drive.google.com/file/d/1QxTBxVvtycmg8TyAFot-M0Ntw0-TPnbE/view?usp=sharing" target="_blank" className='text-textColorBlue underline'>here</a>.
+          Download the full report <a href="https://drive.google.com/file/d/17iYHz5FxVs1scPCnJf7Zac0sZhKg8uxt/view?usp=sharing" target="_blank" className='text-textColorBlue underline'>here</a>.
         </p>
-
-
-
-
-    
-
 
           <div className="relative overflow-hidden pt-20">
             <Carousel slides={slideData} />
