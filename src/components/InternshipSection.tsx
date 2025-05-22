@@ -63,8 +63,6 @@ const Internship = () => {
             <Carousel slides={slideData} />
           </div>
 
-
-
       </div>
       </motion.div>
     );

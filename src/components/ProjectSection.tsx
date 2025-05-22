@@ -73,7 +73,7 @@ const ProjectSection = () => {
               </p>
               <br />
               <p>
-                I trained the model on a dataset of movie reviews. The goal is to give the model a movie title from the dataset, then the model should have to generate the review for that movie.
+                I trained the model on a dataset of movie reviews. The goal is to give the model a movie title from the dataset, then the model should have to generate the review for that movie. I didn’t expect the model to do well at all with the limited training time. The primary goal of this project was still to better understand how a Transformer works. When I tested it, it was able to put together words into sentences that actually made sense some sense or a review.
               </p>
               <br />
               <p>
