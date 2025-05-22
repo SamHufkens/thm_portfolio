@@ -20,18 +20,23 @@ const ProjectSection = () => {
         {
           title: "Skin Cancer Lesions",
           highlight: "Segmentation",
+          projectType: "School Project - SUPSI Exchange Semester",
+          course: "Computer Vision and Deep Learning",
           linkTitle: "Github",
           link: "https://github.com/zenodarani/computer-vision-segmentation",
-          description: "This project was created with a fellow student at SUPSI during my exchange semester. In this project, we focused on the problem of skin lesion segmentation using pixel-level dense classification. The goal is to automatically identify cancerous regions in images by classifying each pixel as either lesion or background. ",
+          description: "In collaboration with a fellow student during my exchange at SUPSI, I worked on a skin lesion segmentation project. The goal was to automatically detect cancerous regions in skin images by performing pixel-level classification.",
           datasetLink: "https://www.kaggle.com/datasets/volodymyrpivoshenko/skin-cancer-lesions-segmentation",
-          assignment: (
+          approach: (
             <>
 
-              <p>We used a segmentation-by-classification approach, where the goal was to classify each pixel based on its surrounding context. Initially, we used a logistic regression model that took only the RGB values of the center pixel as input. We then improved performance by training a simple convolutional neural network (CNN) on 15×15 patches centered around each pixel, allowing the model to learn spatial features. Patches were sampled from training images with labels corresponding to the class of the center pixel.</p><br/>
-              <p>The next step was to use a U-NET architecture. This architecture is commonly used for segmentation. We evaluated model performance using loss, accuracy, AUC and ROC curve on a test set. Finally, we applied the trained model across full images in a sliding window fashion to generate segmentation masks. In this project, I learned to implement segmentation in three different ways.</p>
-            
+              <p>We had to do the following three segmentation methods:</p>
+              <p>1. Logistic Regression - Classified pixels only on their RGB values.</p>
+              <p>2. Patch-Based CNN - Trained on 15x15 image patches to captire local spatial context.</p>
+              <p>3. U-NET - Full convolutional architecture designed specifically for segmentaiton tasks.</p>
+              <p>For each method, we evaluated performance using loss, accuracy, AUC, and ROC curves.</p>
             </>
           ),
+          takeaway: "I gained hands on experience with multiple segmentation strategies, deepened my understanding of CNNs and U-Net, and improved my skills in evaluation metrics and model comparison.",
           image: (
             <img
             src="/assets/skin_cancer.png"
@@ -43,11 +48,13 @@ const ProjectSection = () => {
         {
           title: "VIBO/Integrado",
           highlight: "Chrome Extension",
+          projectType: "Client Project - VIBO Sint-Barbara",
           linkTitle: "Github",
           link: "https://github.com/SamHufkens/vibo-integrado_extension",
           description: "At VIBO Sint-Barbara, teachers use the Integrado platform for administrative tasks. Some also use a manually created Word document called the 'Opdrachtenkaart' to track individual student goals. In this project, I learned to develop a chrome extension and deploy it to the Chrome developer store.",
           problem: "The process of creating these 'Opdrachtenkaart' cards is time consuming and repetitive. Teachers always need to manually input data into Word documents for each student, which is takes a lot of time.",
           solution: "To solve this problem, I developed a Chrome extension that automates the creation of these cards. With the extension installed, relevant student data is automatically pulled from Integrado and inserted into a pre-designed PDF. This results in a significant time savings, as teachers no longer need to manually generate these cards.",
+          takeaway: "Through this project, I learned how to develop a Chrome extension and deploy it to the Chrome developer store and work with web scraping techniques.",
           image: (
             <img
             src="/assets/opdrachtenkaart.png"
@@ -60,28 +67,24 @@ const ProjectSection = () => {
           title: "Transformer model from",
           highlight: "scratch",
           linkTitle: "Github",
+          projectType: "Personal Project",
           link: "https://github.com/SamHufkens/transformer_from_scratch",
           datasetLink: "https://www.kaggle.com/datasets/andrezaza/clapper-massive-rotten-tomatoes-movies-and-reviews",
           description: (
             <>
               <p>
-                I’ve always been curious about how ChatGPT actually works, so I decided to dig into the transformer model behind it. I wanted to understand not just what it does, but how it works, both the math and the architecture.
-              </p>
-              <br />
-              <p>
-                I started by learning the theory, watching YouTube videos and reading articles that explained the transformer architecture in simple terms. Once I felt like I had a good understanding, I started coding. I used NumPy and TensorFlow to build the model from scratch, creating custom layers based on how transformers work. Training the model was not easy becuause it was difficult to access enough compute power to train.
-              </p>
-              <br />
-              <p>
-                I trained the model on a dataset of movie reviews. The goal is to give the model a movie title from the dataset, then the model should have to generate the review for that movie. I didn’t expect the model to do well at all with the limited training time. The primary goal of this project was still to better understand how a Transformer works. When I tested it, it was able to put together words into sentences that actually made sense some sense or a review.
-              </p>
-              <br />
-              <p>
-                Overall, this project helped me understand how transformers work on a deeper level, and it was really interesting to build and train one myself using Python.
+                I’ve always been curious about how ChatGPT actually works, so I decided to dig into the transformer model behind it. I wanted to understand not just what it does, but how it works, both the math and the architecture. I explored the core concepts behind transformers by building and training one from scratch using Python.
               </p>
             </>
 
           ),
+          approach: (
+            <>
+              <p>First, I began by studying the architecture through online resources like YouTube videos and articles that break down the math and structure of transformers. Once I understood the theory, I implemented the model using NumPy and Tensorflow, building the key components like the attention mechanism and positional embedding manually.</p><br/>
+              <p>To test the model, I trained it on a movie review dataset. Given a movie title as input, the model should then generate a review for that movie. Because of limited computing power, training was constrained, but the model still produced a bit of sentence structure and review-like text.</p>
+            </>
+          ),
+          takeaway: "This project gave me a hands-on understanding of how transformers work. It also improved my skills in low-level model implementaiton by working with Tensorflow and NumPy.",
           image: (
             <img
             src="/assets/transformer_diagram.png"
@@ -119,35 +122,57 @@ const ProjectSection = () => {
                 <ModalBody>
                   <ModalContent>
                     <div>
-                      <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold mb-8">
+                      <h4 className="text-lg md:text-2xl text-neutral-600 dark:text-neutral-100 font-bold ">
                         {project.title}{" "}
                         <span className="px-1 py-0.5 rounded-md bg-gray-100 dark:bg-slate-800 dark:border-neutral-700 border border-gray-200">
                           {project.highlight}
                         </span>
                       </h4>
+
+
+                      <h5 className="text-md mt-2">
+                        <span className="font-bold">Project Type: </span>{project.projectType}</h5>
+
+                      {project.course && (
+                        <h5 className="text-md mb-2">
+                        <span className="font-bold">Course: </span>{project.course}</h5>
+                      )}
+                      
+
                       <div className="text-white">
+                        <h5 className="text-md font-bold mt-4">Overview</h5>
                         <p>{project.description}</p>
+
+                        {project.approach && (
+                          <div>
+                            <h5 className="text-md font-bold mt-4">Approach</h5>
+                            {project.approach}
+                          </div>
+                        )}
+
+                        
 
                         {project.problem && (
                           <div>
-                            <h5 className="text-xl text-bold underline mt-4">Problem</h5>
+                            <h5 className="text-md font-bold mt-4">Problem</h5>
                             <p>{project.problem}</p>
                           </div>
                         )}
 
                         {project.solution && (
                           <div>
-                            <h5 className="text-xl text-bold underline mt-4">Solution</h5>
+                            <h5 className="text-md font-bold mt-4">Solution</h5>
                             <p>{project.solution}</p>
                           </div>
                         )}
 
-                        {project.assignment && (
+                        {project.takeaway && (
                           <div>
-                            <h5 className="text-xl text-bold underline mt-4">Assignment</h5>
-                            {project.assignment}
+                            <h5 className="text-md font-bold mt-4">Takeaway</h5>
+                            {project.takeaway}
                           </div>
                         )}
+                        
 
                         {project.link && (
                           <div className="flex gap-8 mt-4">
