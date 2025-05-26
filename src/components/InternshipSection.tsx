@@ -1,34 +1,10 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { HeaderSection } from './ui/header-section';
-import { Carousel } from './ui/carousel';
 
 const Internship = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
-
-      const slideData = [
-    {
-      title: "Web Application",
-      src: "/assets/webapp.png",
-    },
-    {
-      title: "Motion Detection",
-      src: "/assets/md.png",
-    },
-    {
-      title: "ANPR",
-      src: "/assets/anpr.png",
-    },
-    {
-      title: "Notification",
-      src: "/assets/notification.png",
-    },
-    {
-      title: "Visualization",
-      src: "/assets/vis.png",
-    },
-  ];
   
     return (
         <motion.div
@@ -58,10 +34,6 @@ const Internship = () => {
         <p className='text-justify text-textColorRose mt-5'>
           Download the full report <a href="https://drive.google.com/file/d/1z1w9wdz5SrECRyaK2zonUgCWtp8qfuUz/view?usp=sharing" target="_blank" className='text-textColorBlue underline'>here</a>.
         </p>
-
-          <div className="relative overflow-hidden pt-20">
-            <Carousel slides={slideData} />
-          </div>
 
       </div>
       </motion.div>

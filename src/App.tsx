@@ -1,5 +1,6 @@
 import './App.css'
 import AboutMeSection from './components/AboutMeSection'
+import ErasmusSection from './components/ErasmusSection'
 import FooterSection from './components/FooterSection'
 import HeroSection from './components/HeroSection'
 import Internship from './components/InternshipSection'
@@ -14,6 +15,7 @@ function App() {
       <HeroSection />
       <AboutMeSection />
       <Internship />
+      <ErasmusSection />
       <ProjectSection />
       <FooterSection />
     </div>

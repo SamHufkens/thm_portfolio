@@ -30,6 +30,7 @@ function FooterSection() {
           <div className="flex space-x-4 text-lg">
             <a className="hover:text-primary transition-colors duration-300" href="#aboutMe">About Me</a>
             <a className="hover:text-primary transition-colors duration-300" href="#internship">Internship</a>
+            <a className="hover:text-primary transition-colors duration-300" href="#erasmus">Erasmus</a>
             <a className="hover:text-primary transition-colors duration-300" href="#projectSection">Projects</a>
           </div>
         </div>

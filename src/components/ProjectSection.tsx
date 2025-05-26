@@ -105,8 +105,8 @@ const ProjectSection = () => {
       transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1], delay: 0.2 }}
       className="mt-40"
     >
-      <div id="projectSection" className="w-10/12 md:w-8/12 mx-auto ">
-          <HeaderSection small='MY OTHER WORK' big='Projects.' center={false}/>
+      <div id="projectSection" className="w-10/12 md:w-8/12 mx-auto mt-52">
+          <HeaderSection small='MY OTHER WORK' big='Projects.' center={true}/>
 
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">

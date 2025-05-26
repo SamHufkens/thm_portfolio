@@ -10,7 +10,7 @@ export function Navbar() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1] }}
     >
-      <div className="max-w-[800px] flex flex-wrap items-center justify-between mx-auto lg:border dark:border-white/[0.2] rounded-full py-4 px-6">
+      <div className="max-w-[860px] flex flex-wrap items-center justify-between mx-auto lg:border dark:border-white/[0.2] rounded-full py-4 px-6">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <h1 className="dark:text-white text-2xl font-bold">
             Sam <span className="text-primaryColor">Hufkens.</span>
@@ -31,8 +31,11 @@ export function Navbar() {
               <a href="#internship" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Internship</a>
             </li>
             <li>
-              <a href="#projectSection" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+              <a href="#erasmus" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Erasmus</a>
             </li>
+            <li>
+              <a href="#projectSection" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+            </li> 
           </ul>
         </div>
       </div>
