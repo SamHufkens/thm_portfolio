@@ -1,7 +1,5 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa6';
-import { MdOutlineEmail } from "react-icons/md";
 import { HeaderSection } from './ui/header-section';
 
 const ErasmusSection = () => {
