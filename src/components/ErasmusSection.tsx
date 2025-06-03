@@ -14,7 +14,7 @@ const ErasmusSection = () => {
           transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1], delay: 0.2 }}
           className='mt-10'
         >
-      <div id="erasmus" className="dark:text-white w-10/12 md:w-8/12 mx-auto mt-52">
+      <div id="erasmus" className="dark:text-white w-10/12 md:w-8/12 mx-auto max-w-6xl mt-52">
         <HeaderSection small='SWITZERLAND, LUGANO - SUPSI' big='Erasmus.' center={false}/>
         <div className="flex flex-col items-center md:flex-row justify-center gap-10 mt-9 text-justify">
             

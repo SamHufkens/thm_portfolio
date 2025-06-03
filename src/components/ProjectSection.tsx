@@ -31,7 +31,7 @@ const ProjectSection = () => {
 
               <p>We had to do the following three segmentation methods:</p>
               <p>1. Logistic Regression - Classified pixels only on their RGB values.</p>
-              <p>2. Patch-Based CNN - Trained on 15x15 image patches to captire local spatial context.</p>
+              <p>2. Patch-Based CNN - Trained on 15x15 image patches to capture local spatial context.</p>
               <p>3. U-NET - Full convolutional architecture designed specifically for segmentaiton tasks.</p>
               <p>For each method, we evaluated performance using loss, accuracy, AUC, and ROC curves.</p>
             </>
@@ -53,7 +53,7 @@ const ProjectSection = () => {
           link: "https://github.com/SamHufkens/vibo-integrado_extension",
           description: "At VIBO Sint-Barbara, teachers use the Integrado platform for administrative tasks. Some also use a manually created Word document called the 'Opdrachtenkaart' to track individual student goals. In this project, I learned to develop a chrome extension and deploy it to the Chrome developer store.",
           problem: "The process of creating these 'Opdrachtenkaart' cards is time consuming and repetitive. Teachers always need to manually input data into Word documents for each student, which is takes a lot of time.",
-          solution: "To solve this problem, I developed a Chrome extension that automates the creation of these cards. With the extension installed, relevant student data is automatically pulled from Integrado and inserted into a pre-designed PDF. This results in a significant time savings, as teachers no longer need to manually generate these cards.",
+          solution: "To solve this problem, I developed a Chrome extension that automates the creation of these cards. With the extension installed, relevant student data is automatically pulled from Integrado and inserted into a pre-designed PDF. This results in significant time savings, as teachers no longer need to manually create these word documents.",
           takeaway: "Through this project, I learned how to develop a Chrome extension and deploy it to the Chrome developer store and work with web scraping techniques.",
           image: (
             <img
@@ -105,7 +105,7 @@ const ProjectSection = () => {
       transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1], delay: 0.2 }}
       className="mt-40"
     >
-      <div id="projectSection" className="w-10/12 md:w-8/12 mx-auto mt-52">
+      <div id="projectSection" className="w-10/12 md:w-8/12 mx-auto max-w-6xl mt-52">
           <HeaderSection small='MY OTHER WORK' big='Projects.' center={true}/>
 
 

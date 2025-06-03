@@ -14,7 +14,7 @@ const Internship = () => {
           transition={{ duration: 0.5, ease: [0.4, 0.0, 0.2, 1], delay: 0.2 }}
           className='mt-10'
         >
-      <div id="internship" className="dark:text-white w-10/12 md:w-8/12 mx-auto mt-60">
+      <div id="internship" className="dark:text-white w-10/12 md:w-8/12 max-w-6xl mx-auto mt-60">
         <HeaderSection small='ANPR NOTIFICATION SYSTEM' big='Internship.' center={true}/>
         <p className='mt-10 text-justify text-textColorRose'>
           EpicData shares office space with several small businesses, creating challenges
@@ -29,7 +29,7 @@ const Internship = () => {
           system requires a license plate to be detected twice before sending a notification.
           Additionally, a Power BI dashboard provides consultants with real-time insights
           into system performance and historical data. A web application, built with NextJS, enables consultants to manage client meetings. Once the system was fully
-          completed, I tested it in two different locations, and all tests were successful.
+          completed, I tested it at two different locations, and all tests were successful.
         </p>
         <p className='text-justify text-textColorRose mt-5'>
           Download the full report <a href="https://drive.google.com/file/d/1z1w9wdz5SrECRyaK2zonUgCWtp8qfuUz/view?usp=sharing" target="_blank" className='text-textColorBlue underline'>here</a>.
