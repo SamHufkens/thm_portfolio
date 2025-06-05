@@ -24,14 +24,14 @@ const ErasmusSection = () => {
                 </p>
                 <br />
                 <p className="text-textColorRose">
-                    I studied at the University of Applied Sciences and Arts of Southern Switzerland (SUPSI), where I enrolled in the academic bachelor's program in "Data Science and Artificial Intelligence." I had the opportunity to take courses from both the second and third years of the program.
+                  I studied at the University of Applied Sciences and Arts of Southern Switzerland (SUPSI) in the academic bachelor's program "Data Science and Artificial Intelligence." I selected courses from the second and third year. In total, I took seven: Algorithm Design, Ethics, Supervised Learning, Data Visualization, Data Management, Deep Learning and Computer Vision, and Game Development. In my opinion, Algorithm Design was the most challenging. 
                 </p>
                 <br />
                 <p className="text-textColorRose">
-                    I chose to participate in this exchange because I’ve always wanted to live and study abroad, and this was the perfect opportunity. It was an amazing experience, both academically and personally.
+                    I chose to participate in this exchange program because I’ve always wanted to live and study abroad, and this was the perfect opportunity. It was an amazing experience, both academically and personally.
                 </p>
             </div>
-            <img className="rounded-lg w-[400px] md:w-[410px]" src="/assets/supsi.jpg"  loading="lazy" />
+            <img className="rounded-lg w-[400px] md:w-[420px]" src="/assets/supsi.jpg"  loading="lazy" />
         </div>
           
       </div>

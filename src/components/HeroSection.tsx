@@ -24,8 +24,10 @@ const HeroSection = () => {
               className="text-[2.0rem] sm:text-5xl md:text-6xl lg:text-[5.6rem] font-bold text-neutral-700 dark:text-white  leading-relaxed lg:leading-snug"
             >
               <p className="dark:text-white text-center sm:text-lg md:text-xl lg:text-2xl mb-2 text-sm">
-                Hi, I'm Sam Hufkens 👋
+                Hi, I'm Sam Hufkens{" "}
+                <span className="inline-block hover:animate-wiggle origin-bottom">👋</span>
               </p>
+
               Welcome to my{" "}
               <Highlight className="text-black dark:text-white">
                 Portfolio
@@ -43,7 +45,7 @@ const HeroSection = () => {
               <a href="mailto:samhufkens6@hotmail.com" className="text-white hover:text-primaryColor transition-colors duration-300 hidden md:block lg:block">
                   <MdOutlineEmail size={20} />
               </a>
-              <a href="https://drive.google.com/file/d/1pfk0ChuCuBatoqxfRV0nkk9EBG-ePAtL/view?usp=sharing" target="_blank">
+              <a href="https://drive.google.com/file/d/14EaCfLWBTx5_48YQA0DozJmFM23i6J7i/view?usp=sharing" target="_blank">
                 <button className="border border-primaryColor text-sm shadow-[inset_0_0_0_2px_theme('colors.primaryColor')] text-black px-12 py-4 rounded-full font-medium bg-transparent hover:bg-primaryColor hover:text-white dark:text-neutral-200 transition duration-200 items-center space-x-2 flex">
                   <FaDownload size={19} />
                   <span>Curriculum Vitae</span>

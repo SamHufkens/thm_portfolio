@@ -38,9 +38,15 @@ module.exports = {
           third: "moveInCircle 40s linear infinite",
           fourth: "moveHorizontal 40s ease infinite",
           fifth: "moveInCircle 20s ease infinite",
-          shimmer: "shimmer 2s linear infinite"
+          shimmer: "shimmer 2s linear infinite",
+          wiggle: 'wiggle 0.5s ease-in-out',
       },
       keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(15deg)' },
+          '75%': { transform: 'rotate(-15deg)' },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",

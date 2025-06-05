@@ -1,23 +1,20 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import AboutMeSection from './components/AboutMeSection'
-import ErasmusSection from './components/ErasmusSection'
-import FooterSection from './components/FooterSection'
-import HeroSection from './components/HeroSection'
-import Internship from './components/InternshipSection'
-import ProjectSection from './components/ProjectSection'
-import { Navbar } from './components/navbar'
+import Home from './pages/home'
+import SegmentationProject from './pages/segmentation-project'
+import ExtensionProject from './pages/extension-project'
+import TransformerProject from './pages/transformer-project'
 
 function App() {
 
   return (
-    <div className='dark:bg-darkBackground overflow-x-hidden scroll-smooth'>
-      <Navbar/>
-      <HeroSection />
-      <AboutMeSection />
-      <Internship />
-      <ErasmusSection />
-      <ProjectSection />
-      <FooterSection />
+    <div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/segmentation-project' element={<SegmentationProject />} />
+        <Route path='/extension-project' element={<ExtensionProject />} />
+        <Route path='/transformer-project' element={<TransformerProject />} />
+      </Routes>
     </div>
   )
 }

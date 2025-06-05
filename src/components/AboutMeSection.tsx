@@ -24,11 +24,10 @@ const AboutMeSection = () => {
               <p className='text-textColorRose'>Hi, my name is Sam. I am passionate about Artificial Intelligence and the technology of the future.</p>
               <br />
               <p className='text-textColorRose'>
-              My interest in programming began in my last year of high school, and since then, I have been eager to explore and develop new technologies.
-              I specialize in Artificial Intelligence because I believe it is shaping the future of technology. I enjoy working with the latest advancements in AI, applying cutting-edge models and techniques to real-world problems. While I have experience with modern web development, my main focus is on AI.
+                In my free time, I enjoy working on coding projects, whether it’s web development or something AI related. Outside of tech, I’m also really into acting. When I get the chance, I like to be an extra or featured extra in movies or TV shows. This also helps improving my soft skills.
               </p> <br/>
               <p className='text-textColorRose'>
-                At the start of my bachelor’s, I wasn't great with soft skills. But over time, through group projects and my exchange semester in Switzerland, I’ve really worked on improving my communication and teamwork.
+                I’ve grown a lot during my bachelor’s, especially in communication and teamwork. The exchange semester in Switzerland really challenged me to improve my soft skills, which weren’t my strongest at the start, but developed through group projects and new experiences with fellow exchange students.
               </p>
 
               <div className='flex gap-4 justify-center md:justify-start mt-4'>
