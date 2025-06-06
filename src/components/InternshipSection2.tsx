@@ -24,13 +24,13 @@ const components = [
   {
     title: 'ANPR',
     image: 'assets/st_anpr.png',
-    description: 'Once motion stops for a short period, the snapshots are sent to the ANPR component, hosted via FastAPI on an Azure Container Instance. Each image undergoes object detection using a YOLO model that I trained on Belgian license plates. If a license plate is found, the ROI is extracted and passed as input for OCR. A plate is confirmed when it appears twice across multiple snapshots.',
+    description: 'Once motion stops for a short period, the snapshots are sent to the ANPR component, hosted via FastAPI in an Azure Container Instance. Each image undergoes object detection using a YOLO model that I trained on Belgian license plates. If a license plate is found, the ROI is extracted and passed as input for OCR. A plate is confirmed when it appears twice across multiple snapshots.',
     icon: (<><TbNumber123/></>)
   },
   {
     title: 'Notification',
     image: 'assets/st_not.png',
-    description: 'Once a valid license plate is detected, it is sent to the notification component, which queries the database for a matching record. If found, the relevant information is retrieved and a notification is sent to the corresponding consultant via Microsoft Teams. After the notification is sent, data from the detection is stored in the database for the next component.',
+    description: 'Once a valid license plate is detected, it is sent to the notification component, hosted in an Azure function that is HTTP-triggered. First, it queries the database for a matching record. If found, the relevant information is retrieved and a notification is sent to the corresponding consultant via Microsoft Teams. After the notification is sent, data from the detection is stored in the database for the next component.',
     icon: (<><BsMicrosoftTeams/></>)
   },
   {
@@ -61,7 +61,7 @@ const Internship = () => {
       <div id="internship" className="dark:text-white w-10/12 md:w-8/12 max-w-6xl mx-auto mt-60">
         <HeaderSection small='ANPR NOTIFICATION SYSTEM' big='Internship.' center={true}/>
 
-        <p className='mt-5 text-center text-textColorRose mx-auto w-[910px]'>
+        <p className='mt-5 text-center text-textColorRose mx-auto md:w-[910px] w-[400px]'>
           EpicData shares office space with other small businesses and doesn’t have a front desk, which made it difficult to manage client arrivals. To help with this, I built an ANPR Notification System made up of the components below.
         </p>
 

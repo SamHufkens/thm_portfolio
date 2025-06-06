@@ -11,7 +11,7 @@ function SegmentationProject() {
   return (
     
       <div className='min-h-screen bg-darkBackground scroll-smooth flex  justify-center'>
-            <div className="w-[1100px] mx-auto mt-20 text-white ">
+            <div className="w-full max-w-screen-lg px-4 mx-auto mt-20 text-white">
       
                 <a href="/#projectSection" className="flex items-center gap-1 cursor-pointer font-semibold mb-2">
                   <BiLeftArrow size={20}/> Back
@@ -55,16 +55,16 @@ function SegmentationProject() {
                   <h2 className={`text-white font-extrabold text-xl`}>Results</h2>
                   <p className="text-textColorRose font-bold">Logistic regression</p>
                   <p className="text-textColorRose">This approach is definitely not ideal, but it still produced some decent results. It worked well on images where the cancer was clearly visible, but struggled with cases where the cancer was less obvious. We trained the model on only 100 images and achieved an AUC of 0.88. As shown in Image 1, where the cancer is clearly defined, the model performs well. However, in Image 2, the center of the cancer appears lighter rather than dark, which causes the model to misclassify it as non-cancerous.</p>
-                  <img className="mt-2" src="/assets/log1.png"/>
-                  <img src="/assets/log2.png"/>
+                  <img className="mt-2 w-[900px]" src="/assets/log1.png"/>
+                  <img className="w-[900px]" src="/assets/log2.png"/>
 
                   <p className="text-textColorRose font-bold mt-3">Patch-Based CNN</p>
                   <p className="text-textColorRose">We again used 100 images to extract 33 by 33 patches. For each image, we extracted 200 patches. The image below shows an example and its predicted mask. Overall, the model performed quite well, although it was less confident when light red spots appeared, as seen in the raw prediction. However, after applying a threshold, the prediction became much more accurate. The model achieved an AUC of 0.93.</p>
-                  <img className="mt-2" src="/assets/patch1.png"/>
+                  <img className="mt-2 w-[900px]" src="/assets/patch1.png"/>
 
                   <p className="text-textColorRose font-bold mt-3">U-NET</p>
                   <p className="text-textColorRose">For the U-Net, we used 8,000 images for training. To speed up training, we reduced the image resolution. The model achieved good results. Below is a prediction on a test image, where it successfully identified the cancerous region. Overall, the model reached an AUC of 0.96.</p>
-                  <img className="mt-2" src="/assets/u-net1.png"/>
+                  <img  className="mt-2 w-[900px]" src="/assets/u-net1.png"/>
                 </div>
 
                 <div className="mt-5">

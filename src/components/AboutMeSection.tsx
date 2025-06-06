@@ -21,7 +21,7 @@ const AboutMeSection = () => {
         <div className="flex flex-col items-center md:flex-row justify-center gap-10 mt-9 text-justify">
             <img className="rounded-lg w-[250px] md:w-[360px]" src="/assets/me.jpg"  loading="lazy" />
             <div>
-              <p className='text-textColorRose'>Hi, my name is Sam. I am passionate about Artificial Intelligence and the technology of the future.</p>
+              <p className='text-textColorRose'>Hi, my name is Sam. I am passionate about Artificial Intelligence and the technology of the future. I began programming at the end of high school, and the reason I chose AI is because I think it's shaping the future.</p>
               <br />
               <p className='text-textColorRose'>
                 In my free time, I enjoy working on coding projects, whether it’s web development or something AI related. Outside of tech, I’m also really into acting. When I get the chance, I like to be an extra or featured extra in movies or TV shows. This also helps improving my soft skills.

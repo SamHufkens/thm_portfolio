@@ -8,7 +8,7 @@ function ExtensionProject() {
   return (
     <div className='min-h-screen bg-darkBackground scroll-smooth flex  justify-center'>
      
-      <div className="w-[1100px] mx-auto mt-20 text-white ">
+      <div className="w-full max-w-screen-lg px-4 mx-auto mt-20 text-white">
  
           <a href="/#projectSection" className="flex items-center gap-1 cursor-pointer font-semibold mb-2">
             <BiLeftArrow size={20}/> Back
