@@ -52,7 +52,7 @@ function TransformerProject() {
             <p className="text-textColorRose">Training took a long time because I didn’t have enough computing power. Although the dataset wasn’t very large, I still needed enough data to get some decent results. I used Google Colab for training, and each epoch took about 1 hour and 20 minutes, so I only trained for 2 epochs and ended with a training loss of 0.5870. The results weren’t that great, the model was able to put together a few words that made some sense, but the main goal of this project was to understand the architecture rather than to train a perfect model. Overall, I’m satisfied with what I made and learned.</p>
             <div className="md:flex md:items-center md:justify-between mt-4">
                 <img src="assets/transformer_diagram.png" className="w-[400px] rounded-md"/>
-                <img src="assets/tr-out.png" className="w-[670px] h-[60px] rounded-md"/>
+                <img src="assets/tr-out.png" className="w-[550px] h-[60px] rounded-md mt-3 md:mt-0"/>
             </div>
             
           </div>
