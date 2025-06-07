@@ -44,10 +44,10 @@ function DataVisProject() {
           <div className="mt-7 text-justify">
             <h2 className="text-white font-extrabold text-xl">Visualizations</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-              <img src="assets/box_office_trend.png" alt="Box Office Trend" className="w-full h-[350px]" />
-              <img src="assets/gen_dir.png" alt="Genre and Director" className="w-full h-[350px]" />
-              <img src="assets/best_month.png" alt="Best Month" className="w-full h-[350px]" />
-              <img src="assets/b_vs_b.png" alt="Budget vs Box Office" className="w-full h-[350px]" />
+              <img src="assets/box_office_trend.png" alt="Box Office Trend" className="w-full h-[350px] rounded-md" />
+              <img src="assets/gen_dir.png" alt="Genre and Director" className="w-full h-[350px] rounded-md" />
+              <img src="assets/best_month.png" alt="Best Month" className="w-full h-[350px] rounded-md" />
+              <img src="assets/b_vs_b.png" alt="Budget vs Box Office" className="w-full h-[350px] rounded-md" />
             </div>
           </div>
 
