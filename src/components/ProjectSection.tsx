@@ -41,7 +41,7 @@ const ProjectSection = () => {
         image: (
           <img
           src="/assets/opdrachtenkaart.png"
-          alt="skin cancer"
+          alt="opdrachtenkaart"
             className="rounded  w-full h-[200px] "
           />
         )
@@ -53,7 +53,19 @@ const ProjectSection = () => {
         image: (
           <img
           src="/assets/transformer_diagram.png"
-          alt="skin cancer"
+          alt="transformer"
+            className="rounded  w-full h-[200px] "
+          />
+        )
+      }
+      ,
+      {
+        title: "Data Visualization Project",
+        link: "datavis-project",
+        image: (
+          <img
+          src="/assets/datavis_project.png"
+          alt="rps ai"
             className="rounded  w-full h-[200px] "
           />
         )
